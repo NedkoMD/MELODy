@@ -570,3 +570,8 @@ E:\.NET Core\MusicApp\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedd
 E:\.NET Core\MusicApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 E:\.NET Core\MusicApp\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 E:\.NET Core\MusicApp\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\.NET Core\MusicApp\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\.NET Core\MusicApp\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\.NET Core\MusicApp\bin\Debug\net6.0\refs\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\.NET Core\MusicApp\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Core.dll
+E:\.NET Core\MusicApp\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Stores.dll

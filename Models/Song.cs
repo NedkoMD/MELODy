@@ -18,5 +18,9 @@ namespace MusicApp.Models
         [Display(Name = "Release Date")]
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
+        [Required]
+        [Display(Name = "Video")]
+        [DataType(DataType.Url)]
+        public string URL { get; set; }
     }
 }
