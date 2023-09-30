@@ -1,0 +1,60 @@
+﻿@model MusicApp.Models.SongGenreViewModel
+
+@{
+    ViewData["Title"] = "Songs List";
+}
+
+<partial name="_Notification" />
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2>Songs List</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i>&nbsp; Create New</a>
+        </div>
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Songs![0].SongName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Songs![0].Artist)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Songs![0].Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Songs![0].ReleaseDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Songs) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SongName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Artist)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="bi bi-info-circle"></i></a>&nbsp;
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning"><i class="bi bi-pencil-square"></i>&nbsp; Edit</a>&nbsp;
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="bi bi-trash"></i>&nbsp; Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
